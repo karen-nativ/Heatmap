@@ -24,22 +24,24 @@ This tool requires the following files in the same folder:
 Usage
 ----------------------
 To run the tool, import it and then use the `draw_heatmap` function:
+```
+import create_heatmap as ch
 
-`import create_heatmap as ch
-
-ch.draw_heatmap(dict_of_data)`
+ch.draw_heatmap(dict_of_data)
+```
 
 
 ----------------------
 Example
 ----------------------
-
-`import create_heatmap as ch
+```
+import create_heatmap as ch
 import random
 
 X_labels = ["First_col", "Second_col", "Third_col"]
 data = {"MY_REGISTER_" + str(num) : (random.randrange(1,10),random.randrange(1,10),random.randrange(1,10)) for num in range(1, 101)}
-ch.draw_heatmap(X_labels, data)`
+ch.draw_heatmap(X_labels, data)
+```
 
 ---------------------
 Output
