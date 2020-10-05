@@ -23,12 +23,11 @@ This tool requires the following files in the same folder:
 ----------------------
 Usage
 ----------------------
-To run the tool, import it and then use the `draw_heatmap` function:
-```
-import create_heatmap as ch
-
-ch.draw_heatmap(dict_of_data)
-```
+To run the tool:
+1. Import - 
+`import create_heatmap as ch`
+2. Call the `draw_heatmap` function -
+`ch.draw_heatmap(dict_of_data)`
 
 
 ----------------------
