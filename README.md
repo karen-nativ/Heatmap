@@ -17,7 +17,7 @@ environment you are running this script in:
 This tool requires the following files in the same folder:
 * `create_heatmap.py`
 * `heatmap_aux.py`
-* `heatmap_config.py` - The variables in this file may be modified and will affect the graph appearance and file
+* `heatmap_config.py` - The variables in this file may be modified and will affect the heatmap appearance
 
 
 ----------------------
