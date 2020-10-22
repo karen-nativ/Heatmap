@@ -4,8 +4,7 @@ Creates a visual heatmap from given data
 ----------------------
 Prerequisites
 ----------------------
-This tool requires the following libraries/modules be installed within the Python
-environment you are running this script in:
+This tool requires the following libraries/modules installed:
 * `mpl_toolkits.axes_grid1.inset_locator.InsetPosition`
 * `matplotlib.pyplot` (Matplotlib Version >= 3.1)
 * `matplotlib.widgets`
