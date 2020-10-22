@@ -11,6 +11,7 @@ This tool requires the following libraries/modules installed:
    * `Slider`
    * `RadioButtons`
 * `collections.namedtuple`
+* `packaging.version`
 * `math`
 
 This tool requires the following files in the same folder:
