@@ -10,6 +10,7 @@ This tool requires the following Python libraries be installed:
    * Slider
    * RadioButtons
 * collections.namedtuple
+* packaging.version
 * math
 
 This tool requires the following files in the same folder:
@@ -24,6 +25,12 @@ This file contains the following functions:
 import heatmap_aux as aux
 from heatmap_config import *
 import matplotlib.pyplot as plt
+from matplotlib import __version__ as mpl_version
+from packaging import version
+
+### CONSTS ####
+MATPLOTLIB_VERSION = "3.1"
+##############
 
 
 class reg_use:
@@ -70,7 +77,10 @@ def draw_heatmap(X_labels, data_dict):
         Represents the rows of data to be displayed
         The amount of items in every tuple must be identical to the amount of X_labels, otherwise behavior is undefined
     """
-    
+    if version.parse(mpl_version) < version.parse(MATPLOTLIB_VERSION):
+        print("\n *** Error: To create the heatmap, matplotlib version", MATPLOTLIB_VERSION, "is needed.")
+        print("Current matplotlib version:", version.parse(mpl_version),"\n")
+        return
     data_names = data_dict.keys()
     if len(data_names) == 0:
         print(">>>No information to display")
